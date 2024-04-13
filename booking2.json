@@ -1,0 +1,27 @@
+{
+	"whereTo": "Edinburgh",
+	"whereFrom": "Geneva",
+	"flightId": "EZY6903",
+	"departAt": "2016-03-01T00:30+01:00",
+	"arriveAt": "2016-03-01T01:45+00:00",
+	"numSeats": 3,
+	"unitPrice": 100.10,
+	"alloc": [1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+	"pricing": [{
+		"range": ["_1a", "_1f"],
+		"price": 3.99,
+		"cat": "mehr Beinfreiheit"
+	}, {
+		"range": ["_2a", "_6f"],
+		"price": 9.99,
+		"cat": "Vorne"
+	}, {
+		"range": ["_7a", "_11f"],
+		"price": 4.99,
+		"cat": ""
+	}, {
+		"range": ["_12a", "_12f"],
+		"price": 9.99,
+		"cat": "mehr Beinfreiheit"
+	}]
+}

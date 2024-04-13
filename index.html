@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head><title>Seat Booking</title>
+<meta charset=utf-8>
+<script type='text/javascript' src='jquery.min.js'></script>
+<script type='text/javascript' src='seats.js'></script>
+<link rel='stylesheet' href='seats.css'/>
+</head>
+<body>
+<div id='content'>
+   <div id='tripDetails'>
+      <h2>Your Trip</h2>
+      <div>to <span id='whereTo'>whereTo</span></div>
+      <div><span id='date'>Mon 1 February 2016</span></div>
+      <div><span id='whereFrom'>whereFrom</span> to <span id='whereTo1'>whereTo1</span></div>
+      <div>Dep <span id='takeOffTime'>00:00</span> - Arr <span id='landTime'>00:00</span></div>
+      <div>Flight <span id='flightId'>EZY0000</span></div>
+      <div><span id='numSeats'>0</span> x Adults<div><span id='numSeats1'>0</span> x &pound;<span id='unitPrice'>0.00</span></div></div>
+      <div>Subtotal &pound;<span id='subTotal'>0.00</span></div>
+   </div>
+
+   <div id='bookingSummary'>
+      <h2>Booking Summary:</h2>
+      <div>Seats booked: <span id='seatsAlloc'>0</span> of <span id='numSeats2'>4</span></div>
+   </div>
+   <div id='key'>
+      <table><caption>Key</caption>
+        <tr><th>T</th><td>Seat taken</td></tr>
+        <tr><th>F</th><td>Seat free</td></tr>
+        <tr><th>B</th><td>Seat booked by you</td></tr>
+      </table>
+   </div>
+   <div id='plan'>
+   <table>
+    <tr>
+      <td class='n' id='_1a'>T</td>
+      <td class='n' id='_1b'>F</td>
+      <td class='n' id='_1c'>T</td>
+      <td></td>
+      <td class='n' id='_1d'>T</td>
+      <td class='n' id='_1e'>F</td>
+      <td class='n' id='_1f'>T</td>
+    </tr>
+    <tr>
+      <td class='n' id='_2a'>T</td>
+      <td class='n' id='_2b'>F</td>
+      <td class='n' id='_2c'>T</td>
+      <td></td>
+      <td class='n' id='_2d'>F</td>
+      <td class='n' id='_2e'>F</td>
+      <td class='n' id='_2f'>T</td>
+    </tr>
+    <tr>
+      <td class='n' id='_3a'>F</td>
+      <td class='n' id='_3b'>F</td>
+      <td class='n' id='_3c'>F</td>
+      <td></td>
+      <td class='n' id='_3d'>F</td>
+      <td class='n' id='_3e'>F</td>
+      <td class='n' id='_3f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_4a'>F</td>
+      <td class='n' id='_4b'>F</td>
+      <td class='n' id='_4c'>F</td>
+      <td></td>
+      <td class='n' id='_4d'>F</td>
+      <td class='n' id='_4e'>F</td>
+      <td class='n' id='_4f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_5a'>F</td>
+      <td class='n' id='_5b'>F</td>
+      <td class='n' id='_5c'>F</td>
+      <td></td>
+      <td class='n' id='_5d'>F</td>
+      <td class='n' id='_5e'>F</td>
+      <td class='n' id='_5f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_6a'>F</td>
+      <td class='n' id='_6b'>F</td>
+      <td class='n' id='_6c'>F</td>
+      <td></td>
+      <td class='n' id='_6d'>F</td>
+      <td class='n' id='_6e'>F</td>
+      <td class='n' id='_6f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_7a'>F</td>
+      <td class='n' id='_7b'>F</td>
+      <td class='n' id='_7c'>F</td>
+      <td></td>
+      <td class='n' id='_7d'>F</td>
+      <td class='n' id='_7e'>F</td>
+      <td class='n' id='_7f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_8a'>F</td>
+      <td class='n' id='_8b'>F</td>
+      <td class='n' id='_8c'>F</td>
+      <td></td>
+      <td class='n' id='_8d'>F</td>
+      <td class='n' id='_8e'>F</td>
+      <td class='n' id='_8f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_9a'>F</td>
+      <td class='n' id='_9b'>F</td>
+      <td class='n' id='_9c'>F</td>
+      <td></td>
+      <td class='n' id='_9d'>F</td>
+      <td class='n' id='_9e'>F</td>
+      <td class='n' id='_9f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_10a'>F</td>
+      <td class='n' id='_10b'>F</td>
+      <td class='n' id='_10c'>F</td>
+      <td></td>
+      <td class='n' id='_10d'>F</td>
+      <td class='n' id='_10e'>F</td>
+      <td class='n' id='_10f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_11a'>T</td>
+      <td class='n' id='_11b'>F</td>
+      <td class='n' id='_11c'>T</td>
+      <td></td>
+      <td class='n' id='_11d'>T</td>
+      <td class='n' id='_11e'>F</td>
+      <td class='n' id='_11f'>T</td>
+    </tr>
+    <tr>
+      <td class='n' id='_12a'>T</td>
+      <td class='n' id='_12b'>F</td>
+      <td class='n' id='_12c'>T</td>
+      <td></td>
+      <td class='n' id='_12d'>F</td>
+      <td class='n' id='_12e'>F</td>
+      <td class='n' id='_12f'>T</td>
+    </tr>
+    <tr>
+      <td class='n' id='_13a'>F</td>
+      <td class='n' id='_13b'>F</td>
+      <td class='n' id='_13c'>F</td>
+      <td></td>
+      <td class='n' id='_13d'>F</td>
+      <td class='n' id='_13e'>F</td>
+      <td class='n' id='_13f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_14a'>F</td>
+      <td class='n' id='_14b'>F</td>
+      <td class='n' id='_14c'>F</td>
+      <td></td>
+      <td class='n' id='_14d'>F</td>
+      <td class='n' id='_14e'>F</td>
+      <td class='n' id='_14f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_15a'>F</td>
+      <td class='n' id='_15b'>F</td>
+      <td class='n' id='_15c'>F</td>
+      <td></td>
+      <td class='n' id='_15d'>F</td>
+      <td class='n' id='_15e'>F</td>
+      <td class='n' id='_15f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_16a'>F</td>
+      <td class='n' id='_16b'>F</td>
+      <td class='n' id='_16c'>F</td>
+      <td></td>
+      <td class='n' id='_16d'>F</td>
+      <td class='n' id='_16e'>F</td>
+      <td class='n' id='_16f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_17a'>F</td>
+      <td class='n' id='_17b'>F</td>
+      <td class='n' id='_17c'>F</td>
+      <td></td>
+      <td class='n' id='_17d'>F</td>
+      <td class='n' id='_17e'>F</td>
+      <td class='n' id='_17f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_18a'>F</td>
+      <td class='n' id='_18b'>F</td>
+      <td class='n' id='_18c'>F</td>
+      <td></td>
+      <td class='n' id='_18d'>F</td>
+      <td class='n' id='_18e'>F</td>
+      <td class='n' id='_18f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_19a'>F</td>
+      <td class='n' id='_19b'>F</td>
+      <td class='n' id='_19c'>F</td>
+      <td></td>
+      <td class='n' id='_19d'>F</td>
+      <td class='n' id='_19e'>F</td>
+      <td class='n' id='_19f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_20a'>F</td>
+      <td class='n' id='_20b'>F</td>
+      <td class='n' id='_20c'>F</td>
+      <td></td>
+      <td class='n' id='_20d'>F</td>
+      <td class='n' id='_20e'>F</td>
+      <td class='n' id='_20f'>F</td>
+    </tr>
+    <tr>
+      <td class='n' id='_21a'>T</td>
+      <td class='n' id='_21b'>F</td>
+      <td class='n' id='_21c'>T</td>
+      <td></td>
+      <td class='n' id='_21d'>T</td>
+      <td class='n' id='_21e'>F</td>
+      <td class='n' id='_21f'>T</td>
+    </tr>
+    <tr>
+      <td class='n' id='_22a'>T</td>
+      <td class='n' id='_22b'>F</td>
+      <td class='n' id='_22c'>T</td>
+      <td></td>
+      <td class='n' id='_22d'>F</td>
+      <td class='n' id='_22e'>F</td>
+      <td class='n' id='_22f'>T</td>
+    </tr>
+    <tr>
+      <td class='n' id='_23a'>F</td>
+      <td class='n' id='_23b'>F</td>
+      <td class='n' id='_23c'>F</td>
+      <td></td>
+      <td class='n' id='_23d'>F</td>
+      <td class='n' id='_23e'>F</td>
+      <td class='n' id='_23f'>F</td>
+    </tr>
+   </table>
+   </div>
+</div>
+</body>
+</html>

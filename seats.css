@@ -1,0 +1,137 @@
+/* set the bg, change font */
+body{
+	font-family: arial;
+	background-image: url("sky.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#date{
+	font-weight: bold;
+}
+
+/* centering the website's wrapper */
+#content{
+	width: 800px;
+	margin: 0 auto;
+	background-color:white;
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+
+/* placing the key on the right */
+#key {
+	width: 190px;
+	float : right;		
+}
+
+/* styling the caption of the key */
+#key caption {
+	background-color:#468966;
+	padding:5pt;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+
+/* placing the boxes on the right */
+#tripDetails, #bookingSummary, #finalBlock{	
+	width: 300px;
+	clear: right;
+	float: right;
+	background-color: #f2f2f2;
+}
+/* centering contents of td's */
+#plan td {
+	text-align: center;
+}
+
+/* setting the plane image for the seat table */
+#plan table {
+	background-image:url("plane.jpg");
+	background-repeat: no-repeat;
+	padding-top: 95px;
+	padding-left: 25px;
+	padding-right: 35px;
+	padding-bottom: 110px;
+}
+
+/* changing the style of td's with seats */
+.n {
+	border: solid white 2pt;
+	width: 26px;
+	height: 26px;
+	background-color: #79E6F2;
+}
+
+/* making the cursor clicky for the seats that are not taken */
+.n:not(.taken) {
+	cursor: pointer;
+}
+
+/* changing colour of selected seats */
+.n.selected {
+	background-color: #FFB03B;
+}
+
+/* changing the bg of taken seats */
+.taken {
+	background-color: #808080;	
+	background-image : url("taken.jpg");
+	background-position: center center;
+}
+
+/* colour for seats with extra class */
+.extra {
+	background-color: #57C6F2;
+}
+
+/* colour for seats with up class */
+.up {
+	background-color: #0468BF;
+}
+
+/* styling the button */
+.button {
+	background-color: #0080ff;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 15px;
+	cursor: pointer;
+	margin: 20px 75px;
+}
+
+/* change the cursor and opacity for button in disabled state */
+.disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* styling the box with the hovered over seat's details */
+#zonePrice {	
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	position:absolute;
+	width: 13ex;
+	padding:0.5em;
+	background-color:#468966;
+	border:none;
+	border-radius:0.5em;
+}
+
+/* style for h2's */
+h2 {
+	background-color:#4D5973;
+	padding:10px;
+	color: white;	
+}
+
+/* indentation for the blocks */
+div div div, h3{
+	text-indent: 30px;
+}
+
